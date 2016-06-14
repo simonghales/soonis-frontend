@@ -2,7 +2,7 @@ $colours-defined: (
   blackShade: #1D1D21,
   darkShade: #193D4E,
   faintShade: #C8C8C8,
-  lightShade: #F3F5F4,
+  lightShade: #B1C9D4,
   vibrantShade: #BF9735
 );
 
@@ -12,7 +12,7 @@ $colours: (
     heading--faint: map_get($colours-defined, faintShade),
     heading--large: map_get($colours-defined, darkShade),
     heading--medium-sub: map_get($colours-defined, lightShade),
-    heading--site: map_get($colours-defined, darkShade)
+    heading--site: map_get($colours-defined, lightShade)
   ),
 
   header: (
@@ -37,7 +37,7 @@ $colours: (
 
   default: #999999,
   //background: #314fef,
-  background: #FFFFFF,
+  background: #FBFCFC,
   faint: #cccccc,
   vibrant: #F33,
   secondary: #18bdbc

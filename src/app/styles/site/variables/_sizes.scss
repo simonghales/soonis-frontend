@@ -9,9 +9,14 @@ $sizes: (
   player: (
     height: 80px
   ),
+  sidebar: (
+    width: 270px
+  ),
   table: (
 
   )
 );
 
 $sizes-general: map_get($sizes, general);
+
+$sizes-sidebar: map_get($sizes, sidebar);

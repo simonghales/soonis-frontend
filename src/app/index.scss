@@ -30,16 +30,11 @@
 
 /* Site */
 @import "styles/site/site/shared";
-@import "styles/site/site/main-container";
+@import "styles/site/site/layout";
+@import "styles/site/site/page";
 
 /* Components */
-@import "styles/site/components/header/header";
-
-@import "styles/site/components/table/table";
-
-@import "styles/site/components/player/player";
-
-@import "styles/site/components/filters/filters";
+@import "styles/site/components/sidebar";
 
 /* Do not remove the comments below. It's the markers used by gulp-inject to inject
    all your sass files automatically */

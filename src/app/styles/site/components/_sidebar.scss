@@ -1,0 +1,90 @@
+.main-sidebar {
+  width: #{map_get($sizes-sidebar, width)};
+}
+
+  .main-sidebar__shadow {
+    @include box-shadow-multiple(2px 0 15px rgba(0,0,0,0.05));
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 0;
+    left: 50%;
+  }
+
+  .main-sidebar__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+  }
+
+    .main-sidebar__header {
+      padding: 45px 15px 35px 35px;
+
+      .title {}
+
+      .profile-icon {
+        position: absolute;
+        top: 35px;
+        right: 15px;
+
+        .thumbnail {
+          @include box-shadow-multiple(0 2px 5px rgba(0,0,0,0.05));
+          @include border-radius(50%);
+          background-color: #f2f2f2;
+          width: 46px;
+          height: 46px;
+
+
+          background-image: url(/assets/images/rainbow_2.jpg);
+        }
+
+        .notifications {
+          @include border-radius(50%);
+          background-color: #FF001A;
+          border: 1px solid #ffffff;
+          width: 24px;
+          height: 24px;
+          text-align: center;
+          line-height: 21px;
+
+          position: absolute;
+          left: 0;
+          bottom: 0;
+
+          .count {
+            @extend %font--heading;
+            color: #ffffff;
+            font-size: 11px;
+          }
+
+        }
+
+      }
+
+    }
+
+    .main-sidebar__nav {
+
+      > li {
+        @extend %font--heading;
+        color: #5A8FA7;
+        cursor: pointer;
+        font-size: 13px;
+        padding: 15px 15px 15px 35px;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: #f6f9fb;
+        }
+
+        &.state--selected {
+          background-color: #5CC1FE;
+          color: #ffffff;
+        }
+
+      }
+
+    }

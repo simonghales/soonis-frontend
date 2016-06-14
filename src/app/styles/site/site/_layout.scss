@@ -1,0 +1,10 @@
+.main-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.main-content {
+  padding-left: #{map_get($sizes-sidebar, width)};
+}
