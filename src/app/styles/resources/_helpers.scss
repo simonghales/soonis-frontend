@@ -1,0 +1,13 @@
+@function combine-objects($key, $objects...) {
+
+  $combined: ();
+
+  @each $object in $objects {
+
+    $combined: map_merge($object, $combined);
+
+  }
+
+  @return $combined;
+
+}

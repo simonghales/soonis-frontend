@@ -1,0 +1,16 @@
+
+%input-reset {
+  @extend %font--default;
+  border: 0;
+  font-size: 1em;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.input {
+  @extend %input-reset;
+}

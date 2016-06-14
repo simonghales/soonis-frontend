@@ -1,0 +1,15 @@
+.general-max-width {
+  width: 100%;
+  max-width: #{map_get($sizes-general, max-width)};
+}
+
+.general-max-width.centre {
+  @extend .general-max-width;
+  margin: 0 auto;
+}
+
+.thick-top-border {
+  $tb-clr: map_get($header-config, top-border--color);
+  $tb-height: map_get($header-config, top-border--height);
+  border-top: $tb-height solid $tb-clr;
+}

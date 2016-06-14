@@ -1,0 +1,43 @@
+.main-header {
+
+  $tb-clr: map_get($header-config, top-border--color);
+  $tb-height: map_get($header-config, top-border--height);
+  $padding: map_get($header-config, padding);
+
+  @extend .clearfix;
+  @extend .general-max-width.centre;
+  @extend .thick-top-border;
+  padding: $padding 0;
+
+  .left-side {
+    overflow: hidden;
+  }
+
+}
+
+  .main-header__heading {
+    float: right;
+    position: relative;
+    top: 8px;
+  }
+
+  .main-header__filters {
+    @extend .clearfix;
+    margin-top: 14px;
+
+    > li {
+      @extend .heading--large;
+      @include text-truncate;
+      cursor: pointer;
+      float: left;
+      margin-right: 50px;
+
+      max-width: 320px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+    }
+
+  }

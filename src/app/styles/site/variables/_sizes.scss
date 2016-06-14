@@ -1,0 +1,17 @@
+$sizes: (
+  general: (
+    max-width: 1360px
+  ),
+  header: (
+    top-border--height: 10px,
+    padding: 40px
+  ),
+  player: (
+    height: 80px
+  ),
+  table: (
+
+  )
+);
+
+$sizes-general: map_get($sizes, general);

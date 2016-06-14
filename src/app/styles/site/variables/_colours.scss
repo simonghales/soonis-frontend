@@ -1,0 +1,44 @@
+$colours-defined: (
+  blackShade: #1D1D21,
+  darkShade: #193D4E,
+  faintShade: #C8C8C8,
+  lightShade: #F3F5F4,
+  vibrantShade: #BF9735
+);
+
+$colours: (
+
+  typography: (
+    heading--faint: map_get($colours-defined, faintShade),
+    heading--large: map_get($colours-defined, darkShade),
+    heading--medium-sub: map_get($colours-defined, lightShade),
+    heading--site: map_get($colours-defined, darkShade)
+  ),
+
+  header: (
+    top-border--color: map_get($colours-defined, darkShade)
+  ),
+
+  player: (
+    activeShade: map_get($colours-defined, vibrantShade),
+    background-color: map_get($colours-defined, darkShade)
+  ),
+
+  table: (
+    activeShade: map_get($colours-defined, vibrantShade),
+    blackShade: map_get($colours-defined, blackShade),
+    darkShade: map_get($colours-defined, darkShade),
+    hoverShade: map_get($colours-defined, lightShade)
+  ),
+
+  dark: #141414,
+  medium: #70727B,
+  light: #B4B4B4,
+
+  default: #999999,
+  //background: #314fef,
+  background: #FFFFFF,
+  faint: #cccccc,
+  vibrant: #F33,
+  secondary: #18bdbc
+);

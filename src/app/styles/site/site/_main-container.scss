@@ -1,0 +1,3 @@
+.main-container {
+  padding-bottom: #{map_get(map_get($sizes, player), height)}; // todo write a function to allow lower level retrieval
+}

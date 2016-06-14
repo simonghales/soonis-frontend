@@ -1,0 +1,104 @@
+.main-table-container {}
+
+.main-table {
+
+  .main-table__col {
+    padding-right: 10px;
+
+    &.main-table__col--type-time,
+    &.main-table__col--type-debut,
+    &.main-table__col--type-likes,
+    &.main-table__col--type-plays,
+    &.main-table__col--type-lksPlys,
+    &.main-table__col--type-lksHr {
+      text-align: right;
+      padding-right: 0;
+      padding-left: 10px;
+    }
+
+    &.main-table__col--type-hash {
+      width: 50px;
+    }
+
+    &.main-table__col--type-track {
+      flex: 1;
+    }
+
+    &.main-table__col--type-soundcloud {
+      width: 230px;
+    }
+
+    &.main-table__col--type-genre {
+      width: 130px;
+    }
+
+    &.main-table__col--type-time {
+      width: 80px;
+    }
+
+    &.main-table__col--type-debut {
+      width: 85px;
+    }
+
+    &.main-table__col--type-likes {
+      width: 80px;
+    }
+
+    &.main-table__col--type-plays {
+      width: 80px;
+    }
+
+    &.main-table__col--type-lksPlys {
+      width: 110px;
+    }
+
+    &.main-table__col--type-lksHr {
+      width: 100px;
+    }
+
+  }
+
+  .main-table__row {
+    padding: 17px 0;
+    color: #{map_get($table-colors, blackShade)};
+
+    &.state--played {
+      background-color: #{map_get($table-colors, hoverShade)};
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: #{map_get($table-colors, activeShade)};
+    }
+
+    &.state--active {
+      color: #ffffff;
+      background-color: #{map_get($table-colors, darkShade)};
+    }
+
+    .content {
+      @extend .general-max-width.centre;
+      display: flex;
+    }
+
+  }
+
+}
+
+  .main-table__header {
+    @extend .general-max-width.centre;
+    border-top: 2px solid #{map_get($table-colors, darkShade)};
+    border-bottom: 2px solid #{map_get($table-colors, darkShade)};
+    display: flex;
+    padding: 30px 0 25px 0;
+
+    .main-table__col {
+      color: #{map_get($table-colors, darkShade)};
+      font-weight: 700;
+    }
+
+  }
+
+  .main-table__body {
+    //background-color: #{map_get($table-colors, lightShade)};
+  }

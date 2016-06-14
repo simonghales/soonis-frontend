@@ -1,0 +1,16 @@
+// Typography
+$typography-colors: map_get($colours, typography);
+
+// Header
+$header-colors: map_get($colours, header);
+$header-sizes: map_get($sizes, header);
+$header-config: combine-objects(header, $header-colors, $header-sizes);
+
+// Table
+$table-colors: map_get($colours, table);
+$table-sizes: map_get($sizes, table);
+
+// Player
+$player-colors: map_get($colours, player);
+$player-sizes: map_get($sizes, player);
+$player-config: combine-objects(player, $player-colors, $player-sizes);
