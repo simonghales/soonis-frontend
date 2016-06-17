@@ -15,3 +15,17 @@
 .btn {
   @extend %btn-reset;
 }
+
+.btn--mini {
+  @include border-radius(26px);
+  background-color: #5CC1FE;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 12px 20px;
+
+  &.btn--mini--spread {
+    padding-right: 24px;
+  }
+
+}

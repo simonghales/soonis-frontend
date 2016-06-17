@@ -1,0 +1,31 @@
+.events-preview-section {
+  margin-top: 90px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+}
+
+.events-preview {}
+
+  .events-preview__title-wrapper {
+    margin-bottom: 15px;
+  }
+
+    .events-preview__title {
+      color: #5A8FA7;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+.events-preview__body {
+  @extend .clearfix;
+
+  .event-preview-card {
+    float: left;
+    margin-right: 20px;
+  }
+
+}

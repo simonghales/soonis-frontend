@@ -25,6 +25,7 @@
 @import "styles/site/general/typography";
 @import "styles/site/general/typography.headings";
 @import "styles/site/general/buttons";
+@import "styles/site/general/anchors";
 @import "styles/site/general/form";
 @import "styles/site/general/layout";
 
@@ -35,6 +36,9 @@
 
 /* Components */
 @import "styles/site/components/sidebar";
+
+@import "styles/site/components/event-preview/event-preview";
+@import "styles/site/components/event-preview/event-preview-card";
 
 /* Do not remove the comments below. It's the markers used by gulp-inject to inject
    all your sass files automatically */
